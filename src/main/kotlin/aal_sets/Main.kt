@@ -1,35 +1,16 @@
-package aak_maps
+package aal_sets
 
 fun main(args: Array<String>){
+    val vocalesRepetidas = setOf("a","e","i","o","u","i","o")
+    println(vocalesRepetidas)
 
-    //MAPAS INMUTABLES
-    val edadDeSuperHeroes = mapOf(
-        "Ironman" to 35,
-        "Spiderman" to 23,
-        "Capitan America" to 99
-    )
-    println(edadDeSuperHeroes)
+    val numerosFavoritos = mutableSetOf(1,2,3,4)
+    numerosFavoritos.add(5)
+    numerosFavoritos.add(5)
+    println(numerosFavoritos)
+    numerosFavoritos.remove(5)
+    println(numerosFavoritos)
 
-    //MAPAS MUTABLES
-    val edadDeSuperHeroesMutable = mutableMapOf(
-        "Ironman" to 35,
-        "Spiderman" to 23,
-        "Capitan America" to 99
-    )
-    println(edadDeSuperHeroesMutable)
-
-    edadDeSuperHeroesMutable.put("Wolverine", 45)
-    println(edadDeSuperHeroesMutable)
-
-    edadDeSuperHeroesMutable["Storm"] = 30
-    println(edadDeSuperHeroesMutable)
-
-    val edadIronman = edadDeSuperHeroesMutable["Ironman"]
-    println("edadIronman $edadIronman")
-
-    edadDeSuperHeroesMutable.remove("Wolverine")
-    println(edadDeSuperHeroesMutable)
-
-    println(edadDeSuperHeroesMutable.keys)
-    println(edadDeSuperHeroesMutable.values)
+    val valorDelSet: Int? = numerosFavoritos.firstOrNull{ num -> num > 2}
+    println("valorDelSet $valorDelSet")
 }
