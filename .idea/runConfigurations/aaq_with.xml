@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="aaq_with" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="aaq_with.MainKt" />
+    <module name="CursoKotlinJuamBer.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

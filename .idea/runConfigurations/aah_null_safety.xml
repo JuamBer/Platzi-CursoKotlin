@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="aah_null_safety" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="aah_null_safety.MainKt" />
+    <module name="CursoKotlinJuamBer.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

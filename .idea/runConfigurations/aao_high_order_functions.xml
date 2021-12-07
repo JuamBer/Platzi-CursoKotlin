@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="aao_high_order_functions" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="aao_high_order_functions.MainKt" />
+    <module name="CursoKotlinJuamBer.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
