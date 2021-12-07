@@ -18,3 +18,7 @@ Material realizado en el curso de Kotlin de "Kotlin desde cero" de [Platzi](http
 
 * **Juan Sáez García** -  [Web Personal](https://juamber.com)
 
+## Certificación 🎓
+
+![Certificación](https://github.com/JuamBer/CursoKotlin/blob/master/lib/diploma-kotlin.jpg)
+
