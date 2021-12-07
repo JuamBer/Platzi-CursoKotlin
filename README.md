@@ -1,5 +1,7 @@
 # Curso Kotlin  
 
+Material realizado en el curso de Kotlin de [Platzi](https://platzi.com/p/JuamBer/curso/2245-kotlin/diploma/detalle/)
+
 ## Tecnologías 🚀
 
 * **KOTLIN**  
