@@ -20,5 +20,5 @@ Material realizado en el curso de "Kotlin Desde Cero" de [Platzi](https://platzi
 
 ## Certificación 🎓
 
-![Certificación](https://github.com/JuamBer/CursoKotlin/blob/master/lib/diploma-kotlin.jpg)
+![Certificación](https://github.com/JuamBer/CursoKotlin/blob/master/img-licencia/diploma-kotlin.jpg)
 
