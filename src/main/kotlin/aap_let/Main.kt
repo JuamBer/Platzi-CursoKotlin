@@ -1,22 +1,15 @@
-package aao_high_order_functions
+package aap_let
 
 fun main(args: Array<String>){
-    val largoValorInicial = superFunction(valorInicial = "Hola!", block = { valor ->
-        valor.length
-    })
+    var nombre : String? = null
 
-    println(largoValorInicial)
-    val lambda: () -> String = funcionInception(nombre = "Enrique")
-    val valorLambda: String = lambda()
-    println("valorLambda $valorLambda")
-}
+    nombre?.let{
+        valor -> println("El nombre no es nulo, es $valor")
+    }
 
-fun superFunction(valorInicial: String, block : (String) -> Int) : Int {
-    return block(valorInicial)
-}
+    nombre = "Pepe"
 
-fun funcionInception(nombre: String) : () -> String {
-    return {
-        "Hola desde la lambda $nombre"
+    nombre?.let{
+            valor -> println("El nombre no es nulo, es $valor")
     }
 }

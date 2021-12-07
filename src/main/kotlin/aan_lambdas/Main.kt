@@ -1,38 +1,24 @@
-package aam_funciones
+package aan_lambdas
 
 fun main(args: Array<String>){
-    val frase = "Hola"
-    imprimirFrase(randomCase(frase))
-    imprimirFrase(frase.randomCaseExtension())
-    imprimirNombre(nombre = "Juan", apellido = "Sáez")
-}
-
-//FUNCIONES
-fun randomCase(frase : String) : String {
-    val numeroAleatorio = 0..99
-    val resultadoAleatorio = numeroAleatorio.random()
-    return if(resultadoAleatorio.rem(2) == 0){
-        frase.uppercase()
-    }else{
-        frase.lowercase()
+    val myLambdaIt : (String) -> Int = {
+        it.length
     }
-}
-//MÉTODOS
-fun imprimirFrase(frase : String) : Unit{
-    println("Tu frase es $frase")
-}
 
-//FUNCIONERS DE EXTENSIÓN
-fun String.randomCaseExtension() : String {
-    val numeroAleatorio = 0..99
-    val resultadoAleatorio = numeroAleatorio.random()
-    return if(resultadoAleatorio.rem(2) == 0){
-        this.uppercase()
-    }else{
-        this.lowercase()
+    val myLambda : (String) -> Int = {
+        valor -> valor.length
     }
-}
-//PARÁMETROS NOMBRADOS
-fun imprimirNombre(nombre: String, segundoNombre: String = "", apellido: String){
-    println("Mi nombre es $nombre $segundoNombre $apellido")
+
+    val lambdaEjecutada = myLambda("Casa")
+    println("lambdaEjecutada $lambdaEjecutada")
+
+    val saludos = listOf("Hello","Hola","Ciao")
+
+    val longitudDeSaludosMap = saludos.map{
+        valor -> valor.length
+    }
+    val longitudDeSaludosLambda = saludos.map(myLambda)
+
+    println("longitudDeSaludosMap $longitudDeSaludosMap")
+    println("longitudDeSaludosLambda $longitudDeSaludosLambda")
 }
